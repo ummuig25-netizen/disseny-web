@@ -1,0 +1,81 @@
+/*
+  Nombre del archivo: estil_ex1.css
+  Autor: Umar Sharif Muhammad Iglesias
+  Fecha: 05/03/2026
+*/
+
+/* Estilos generales para el cuerpo de la página */
+body {
+    background-color: #FBF37D;
+    font-family: "Comic Sans MS", "Comic Sans", cursive;
+}
+
+/* Estilos para el título principal: color verde, centrado y subrayado */
+h1 {
+    color: green;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align: center;
+    text-decoration: underline;
+}
+
+/* Estilos para el subtítulo: color rojo y alineado a la derecha */
+h6 {
+    color: red;
+    text-align: right;
+}
+
+/* Estilos para los párrafos: tamaño medio y texto justificado */
+p {
+    font-size: medium;
+    text-align: justify;
+}
+
+/* Estilos para el texto resaltado: color verde y subrayado */
+strong {
+    color: green;
+    text-decoration: underline;
+}
+
+/* Estilos para las imágenes: añade un borde de tipo "groove" */
+img {
+    border: 5px groove;
+}
+
+/* Estilos para las listas: tamaño de fuente y margen izquierdo */
+ul,
+ol {
+    font-size: medium;
+    margin-left: 20px;
+}
+
+/* Espaciado inferior para los elementos de la lista */
+li {
+    margin-bottom: 5px;
+}
+
+/* Contenedor central para la imagen */
+.contenedor-imagen {
+    text-align: center;
+    margin: 20px 0;
+}
+
+/* Estilos para el pie de foto de la imagen */
+.texto-imagen {
+    font-size: small;
+    font-style: italic;
+    margin-top: 5px;
+}
+
+/* Estilos para el pie de página: margen superior y línea divisoria */
+footer {
+    margin-top: 50px;
+    border-top: 1px solid #ccc;
+    padding-top: 10px;
+    text-align: center;
+}
+
+/* Estilos para el texto dentro del pie de página */
+footer h5 {
+    font-weight: normal;
+    color: #333;
+}

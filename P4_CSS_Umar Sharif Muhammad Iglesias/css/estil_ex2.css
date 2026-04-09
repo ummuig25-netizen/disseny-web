@@ -1,0 +1,92 @@
+/*
+  Nombre del archivo: estil_ex2.css
+  Autor: Umar Sharif Muhammad Iglesias
+  Fecha: 05/03/2026
+*/
+
+/* Estilo del cuerpo: Color de fondo amarillo claro y fuente tipo 'fantasy' o Impact */
+body {
+    background-color: #FBF37D;
+    font-family: fantasy, "Impact", sans-serif;
+}
+
+/* Título principal: Color morado oscuro, fuente monoespaciada, alineado a la izquierda y en cursiva */
+h1 {
+    color: #4d194d;
+    font-family: monospace;
+    text-align: left;
+    font-style: italic;
+}
+
+/* Subtítulo: Color morado/rosa, fuente monoespaciada y alineado a la derecha */
+h6 {
+    color: #993366;
+    font-family: monospace;
+    text-align: right;
+}
+
+/* Párrafos: Tamaño de fuente 150% y texto alineado a la izquierda */
+p {
+    font-size: 150%;
+    text-align: left;
+}
+
+/* Texto resaltado: Color morado fuerte y subrayado superior (overline) */
+strong {
+    color: #990099;
+    text-decoration: overline;
+}
+
+/* Imágenes: Borde de 2px punteado negro, ancho del 15% y margen superior/inferior de 10px */
+img {
+    border: 2px dotted #000;
+    width: 15%;
+    height: auto;
+    display: block;
+    margin: 10px 0;
+}
+
+/* Lista no ordenada (ventajas): Alineada a la izquierda con margen consistente */
+ul {
+    margin-left: 10%;
+    list-style-type: square;
+    text-align: left;
+    padding-left: 0;
+    font-size: 150%;
+}
+
+/* Lista ordenada (prestaciones): Alineada a la izquierda con margen consistente */
+ol {
+    margin-left: 10%;
+    list-style-type: lower-greek;
+    text-align: left;
+    padding-left: 0;
+    padding-block-end: 1.2rem;
+    font-size: 150%;
+}
+
+/* Contenedor de la imagen alineado a la izquierda */
+.contenedor-imagen {
+    text-align: left;
+    margin: 20px 0;
+}
+
+/* Imagen alineada a la izquierda */
+.contenedor-imagen img {
+    margin: 0;
+}
+
+/* Estilos para el texto descriptivo de la imagen */
+.texto-imagen {
+    font-size: small;
+    font-style: italic;
+    margin-top: 5px;
+}
+
+/* Estilo para el pie de página: h5 alineado a la izquierda */
+footer h5 {
+    text-align: left;
+    border-top: 1px solid #993366;
+    padding-top: 10px;
+    margin-top: 40px;
+}

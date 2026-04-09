@@ -1,0 +1,160 @@
+/*
+  Nombre del archivo: estil_ex6.css
+  Autor: Umar Sharif Muhammad Iglesias
+  Fecha: 12/03/2026
+*/
+
+/* Reset y Base */
+* {
+    font-family: Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: #000 url('../images/marte_fondo.png') no-repeat center center fixed;
+    background-size: cover;
+    background-attachment: fixed;
+    /* Parallax */
+    color: #fff;
+    padding: 20px;
+}
+
+/* 
+   Contenedor Grid: aplica el diseño de bloques solicitado.
+   Usamos un ancho máximo de 1000px y lo centramos.
+*/
+.grid-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    /* Dos columnas para los bloques centrales */
+    gap: 15px;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+/* Estilos de bloque comunes */
+#titol,
+#informacio_SS,
+#planetes,
+#taules,
+#informacio_P,
+#peu {
+    background: rgba(0, 0, 0, 0.6);
+    padding: 20px;
+    border: 1px solid #fff;
+    border-radius: 5px;
+}
+
+/* 
+   Posicionamiento de bloques según el diagrama:
+*/
+
+#titol {
+    grid-column: 1 / span 2;
+    /* Todo el ancho */
+    text-align: center;
+}
+
+#titol h1 {
+    color: blue;
+    font-family: monospace;
+    font-size: 2.5em;
+    margin-bottom: 10px;
+}
+
+#planeta-foto {
+    width: 40%;
+    border-radius: 50%;
+}
+
+#informacio_SS {
+    grid-column: 1;
+    /* Columna izquierda */
+}
+
+#planetes {
+    grid-column: 2;
+    /* Columna derecha */
+}
+
+#taules {
+    grid-column: 1 / span 2;
+    /* Todo el ancho */
+}
+
+#informacio_P {
+    grid-column: 1 / span 2;
+    /* Todo el ancho */
+}
+
+#peu {
+    grid-column: 1 / span 2;
+    /* Todo el ancho */
+}
+
+/* Estilos de contenido heredados y ajustados */
+
+p {
+    font-size: medium;
+    text-align: justify;
+    line-height: 1.4;
+}
+
+strong {
+    color: blue;
+    text-decoration: overline;
+}
+
+ul {
+    list-style-type: square;
+    margin-left: 30px;
+}
+
+ol {
+    list-style-type: decimal-leading-zero;
+    margin-left: 30px;
+    margin-top: 10px;
+}
+
+.taules-flex {
+    display: flex;
+    gap: 20px;
+    justify-content: space-between;
+}
+
+#taules table {
+    width: 100%;
+    border-collapse: collapse;
+    border: 1px solid #fff;
+}
+
+#taules caption {
+    caption-side: top;
+    text-align: center;
+    font-weight: bold;
+    padding: 5px;
+}
+
+#taules td {
+    border: 1px solid #fff;
+    padding: 10px;
+    font-size: 0.9em;
+}
+
+.galeria-fotos {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.galeria-fotos img {
+    max-width: 250px;
+    border: 2px solid #fff;
+}
+
+footer h5 {
+    color: orange;
+    font-family: monospace;
+    text-align: right;
+}

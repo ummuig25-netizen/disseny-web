@@ -1,0 +1,79 @@
+/*
+  Nombre del archivo: estil_ex4.css
+  Autor: Umar Sharif Muhammad Iglesias
+  Fecha: 12/03/2026
+*/
+
+/* cos: tipus de lletra Trebuchet MS */
+body {
+    font-family: "Trebuchet MS", sans-serif;
+    margin: 40px;
+}
+
+/* taula: títol de la taula a dalt i a la dreta, vora doble */
+table {
+    width: 95%;
+    margin: 40px auto;
+    border-collapse: collapse;
+    border: 4px double #000;
+}
+
+caption {
+    caption-side: top;
+    text-align: right;
+    padding-bottom: 10px;
+    font-weight: bold;
+}
+
+/* cel·la: vora sòlida i unificada amb la taula, color de la lletra #380B61 i espai del 20 pixels */
+th,
+td {
+    border: 1px solid #000;
+    color: #380B61;
+    padding: 20px;
+}
+
+/* cel·la en negreta: text centrat (segons requeriment ex 3.1) */
+.negreta {
+    font-weight: bold;
+    text-align: center;
+    background-color: #4d94ff;
+    /* Blau mitjà per a la columna d'hores */
+}
+
+/* cel·la normal: text a la dreta */
+.normal {
+    text-align: right;
+}
+
+/* Capçalera (captaula) */
+.captaula th {
+    background-color: #00bfff;
+    /* Blau brillant per als dies */
+}
+
+/* Primera cel·la de la cabecera (Hores) */
+.captaula th:first-child {
+    background-color: #001a4d;
+    /* Blau fosc */
+    color: #fff;
+}
+
+/* Fila PATI */
+.filapati td {
+    text-align: center;
+    background-color: #add8e6;
+    /* Blau clar */
+}
+
+/* Assegurar que la columna d'hores a la fila pati també sigui blava mitjà */
+.filapati .negreta {
+    background-color: #4d94ff;
+}
+
+footer {
+    margin-top: 40px;
+    text-align: center;
+    font-size: 0.9em;
+    color: #666;
+}

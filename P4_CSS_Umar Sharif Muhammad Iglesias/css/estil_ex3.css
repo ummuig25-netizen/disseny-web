@@ -1,0 +1,63 @@
+/*
+  Nombre del archivo: estil_ex3.css
+  Autor: Umar Sharif Muhammad Iglesias
+  Fecha: 12/03/2026
+*/
+
+
+body {
+    font-family: monospace;
+    margin: 60px;
+    font-size: 1.25em;
+}
+
+table {
+    width: 90%;
+    margin: 60px auto;
+    border-collapse: collapse;
+    /* cel·la: vora sòlida i unificada amb la taula */
+    background-color: #9FFD87;
+    border: 2px solid #000;
+    min-height: 500px;
+}
+
+caption {
+    caption-side: bottom;
+    padding-top: 15px;
+    font-weight: bold;
+}
+
+
+th,
+td {
+    border: 1px solid #000;
+    color: #380B61;
+    padding: 15px;
+    line-height: 1.5;
+    /* Espaciado entre líneas de texto */
+}
+
+/* cel·la en negreta: text a l’esquerra */
+.negreta {
+    font-weight: bold;
+    text-align: left;
+}
+
+.normal {
+    text-align: right;
+}
+
+.captaula {
+    background-color: #5BFF33;
+}
+
+.filapati td {
+    text-align: center;
+}
+
+footer {
+    margin-top: 40px;
+    text-align: center;
+    font-size: 0.9em;
+    color: #666;
+}
