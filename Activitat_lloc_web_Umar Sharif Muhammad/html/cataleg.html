@@ -1,0 +1,404 @@
+<!DOCTYPE html>
+<html lang="ca">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MangaVerse | Catàleg</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+
+    <header>
+        <a href="portal.html" class="logo">MANGA<span>VERSE</span></a>
+        <nav>
+            <ul>
+                <li><a href="portal.html">Inici</a></li>
+                <li><a href="cataleg.html">Catàleg</a></li>
+                <li><a href="contacte.html">Contacte</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h1>El Nostre Catàleg</h1>
+
+        <!-- Filtres de Categoria -->
+        <section>
+            <div style="display: flex; gap: 15px; margin-bottom: 40px; justify-content: center; flex-wrap: wrap;">
+                <button data-filter="all" style="width: auto; padding: 10px 20px; font-size: 0.8rem; background: var(--accent-primary); border: 1px solid var(--accent-primary);">Tots</button>
+                <button data-filter="shonen" style="width: auto; padding: 10px 20px; font-size: 0.8rem; background: var(--card-bg); border: 1px solid rgba(255,255,255,0.1);">Shonen</button>
+                <button data-filter="seinen" style="width: auto; padding: 10px 20px; font-size: 0.8rem; background: var(--card-bg); border: 1px solid rgba(255,255,255,0.1);">Seinen</button>
+                <button data-filter="novetat" style="width: auto; padding: 10px 20px; font-size: 0.8rem; background: var(--card-bg); border: 1px solid rgba(255,255,255,0.1);">Novetats</button>
+            </div>
+
+            <!-- Rejilla de productos -->
+            <div class="catalog-grid">
+                <article class="product-card" data-category="shonen">
+                    <img src="../img/one_piece.jpg" alt="One Piece">
+                    <div class="card-content">
+                        <h3 class="card-title">One Piece</h3>
+                        <p class="card-description">L'inici de la recerca del tresor més gran del món amb en Monkey D. Luffy.</p>
+                        <div class="card-footer">
+                            <span class="price">8,95 €</span>
+                            <button class="btn-add-cart" data-name="One Piece" data-price="8.95" data-img="../img/one_piece.jpg" style="width: auto; padding: 8px 15px; font-size: 0.8rem;">Afegir</button>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="product-card" data-category="shonen">
+                    <img src="../img/naruto.jpg" alt="Naruto">
+                    <div class="card-content">
+                        <h3 class="card-title">Naruto</h3>
+                        <p class="card-description">La determinació d'un jove ninja per ser acceptat i convertir-se en líder.</p>
+                        <div class="card-footer">
+                            <span class="price">8,95 €</span>
+                            <button class="btn-add-cart" data-name="Naruto" data-price="8.95" data-img="../img/naruto.jpg" style="width: auto; padding: 8px 15px; font-size: 0.8rem;">Afegir</button>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="product-card" data-category="shonen">
+                    <img src="../img/dragon_ball.jpg" alt="Dragon Ball">
+                    <div class="card-content">
+                        <h3 class="card-title">Dragon Ball</h3>
+                        <p class="card-description">L'aventura original de Son Goku que va canviar la història del manga.</p>
+                        <div class="card-footer">
+                            <span class="price">8,95 €</span>
+                            <button class="btn-add-cart" data-name="Dragon Ball" data-price="8.95" data-img="../img/dragon_ball.jpg" style="width: auto; padding: 8px 15px; font-size: 0.8rem;">Afegir</button>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="product-card" data-category="seinen">
+                    <img src="../img/death_note.jpg" alt="Death Note">
+                    <div class="card-content">
+                        <h3 class="card-title">Death Note</h3>
+                        <p class="card-description">Un duel d'intel·lectes brillant entre en Light Yagami i el misteriós L.</p>
+                        <div class="card-footer">
+                            <span class="price">14,95 €</span>
+                            <button class="btn-add-cart" data-name="Death Note" data-price="14.95" data-img="../img/death_note.jpg" style="width: auto; padding: 8px 15px; font-size: 0.8rem;">Afegir</button>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="product-card" data-category="seinen">
+                    <img src="../img/attack_on_titan.jpg" alt="Attack on Titan">
+                    <div class="card-content">
+                        <h3 class="card-title">Attack on Titan</h3>
+                        <p class="card-description">La humanitat lluita per la supervivència contra gegants devoradors.</p>
+                        <div class="card-footer">
+                            <span class="price">9,50 €</span>
+                            <button class="btn-add-cart" data-name="Attack on Titan" data-price="9.50" data-img="../img/attack_on_titan.jpg" style="width: auto; padding: 8px 15px; font-size: 0.8rem;">Afegir</button>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="product-card" data-category="shonen">
+                    <img src="../img/jujutsu_kaisen.jpg" alt="Jujutsu Kaisen">
+                    <div class="card-content">
+                        <h3 class="card-title">Jujutsu Kaisen</h3>
+                        <p class="card-description">Yuji Itadori s'endinsa en el món de les malediccions per salvar amics.</p>
+                        <div class="card-footer">
+                            <span class="price">8,50 €</span>
+                            <button class="btn-add-cart" data-name="Jujutsu Kaisen" data-price="8.50" data-img="../img/jujutsu_kaisen.jpg" style="width: auto; padding: 8px 15px; font-size: 0.8rem;">Afegir</button>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="product-card" data-category="shonen">
+                    <img src="../img/spy_x_family.jpg" alt="Spy x Family">
+                    <div class="card-content">
+                        <h3 class="card-title">Spy x Family</h3>
+                        <p class="card-description">Una família peculiar formada per un espia, una assassina i una telèpata.</p>
+                        <div class="card-footer">
+                            <span class="price">9,00 €</span>
+                            <button class="btn-add-cart" data-name="Spy x Family" data-price="9.00" data-img="../img/spy_x_family.jpg" style="width: auto; padding: 8px 15px; font-size: 0.8rem;">Afegir</button>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="product-card" data-category="shonen">
+                    <img src="../img/demon_slayer.jpg" alt="Demon Slayer">
+                    <div class="card-content">
+                        <h3 class="card-title">Demon Slayer</h3>
+                        <p class="card-description">Tanjiro Kamado busca venjança i una cura per la seva germana Nezuko.</p>
+                        <div class="card-footer">
+                            <span class="price">8,95 €</span>
+                            <button class="btn-add-cart" data-name="Demon Slayer" data-price="8.95" data-img="../img/demon_slayer.jpg" style="width: auto; padding: 8px 15px; font-size: 0.8rem;">Afegir</button>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="product-card" data-category="shonen">
+                    <img src="../img/mha.jpg" alt="My Hero Academia">
+                    <div class="card-content">
+                        <h3 class="card-title">My Hero Academia</h3>
+                        <p class="card-description">Izuku Midoriya somia amb ser l'heroi número u en un món de poders.</p>
+                        <div class="card-footer">
+                            <span class="price">8,50 €</span>
+                            <button class="btn-add-cart" data-name="My Hero Academia" data-price="8.50" data-img="../img/mha.jpg" style="width: auto; padding: 8px 15px; font-size: 0.8rem;">Afegir</button>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="product-card" data-category="seinen">
+                    <img src="../img/tokyo_ghoul.jpg" alt="Tokyo Ghoul">
+                    <div class="card-content">
+                        <h3 class="card-title">Tokyo Ghoul</h3>
+                        <p class="card-description">En Ken Kaneki es converteix en meitat ghoul després d'un tràgic accident.</p>
+                        <div class="card-footer">
+                            <span class="price">8,95 €</span>
+                            <button class="btn-add-cart" data-name="Tokyo Ghoul" data-price="8.95" data-img="../img/tokyo_ghoul.jpg" style="width: auto; padding: 8px 15px; font-size: 0.8rem;">Afegir</button>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="product-card" data-category="novetat">
+                    <img src="../img/chainsaw_man.jpg" alt="Chainsaw Man">
+                    <div class="card-content">
+                        <h3 class="card-title">Chainsaw Man</h3>
+                        <p class="card-description">En Denji fusiona el seu cor amb el seu gos-dimoni Pochita per sobreviure.</p>
+                        <div class="card-footer">
+                            <span class="price">9,50 €</span>
+                            <button class="btn-add-cart" data-name="Chainsaw Man" data-price="9.50" data-img="../img/chainsaw_man.jpg" style="width: auto; padding: 8px 15px; font-size: 0.8rem;">Afegir</button>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="product-card" data-category="shonen">
+                    <img src="../img/bleach.jpg" alt="Bleach">
+                    <div class="card-content">
+                        <h3 class="card-title">Bleach</h3>
+                        <p class="card-description">Ichigo Kurosaki obté poders de Shinigami per protegir els humans.</p>
+                        <div class="card-footer">
+                            <span class="price">8,95 €</span>
+                            <button class="btn-add-cart" data-name="Bleach" data-price="8.95" data-img="../img/bleach.jpg" style="width: auto; padding: 8px 15px; font-size: 0.8rem;">Afegir</button>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <!-- Taula Comparativa -->
+        <section class="table-container" style="margin-top: 80px;">
+            <h2>Comparativa d'Edicions</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Característica</th>
+                        <th>Edició Standard</th>
+                        <th>Edició Kanzenban</th>
+                        <th>Edició Digital</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Format</td>
+                        <td>Rústica (Tankobon)</td>
+                        <td>A5 Tapa dura</td>
+                        <td>Arxiu PDF / EPUB</td>
+                    </tr>
+                    <tr>
+                        <td>Pàgines a color</td>
+                        <td>No</td>
+                        <td>Sí (Originals)</td>
+                        <td>Sí</td>
+                    </tr>
+                    <tr>
+                        <td>Extres</td>
+                        <td>Cap</td>
+                        <td>Pòster i entrevistes</td>
+                        <td>Galeria d'esbossos</td>
+                    </tr>
+                    <tr>
+                        <td>Preu mitjà</td>
+                        <td>8,00 €</td>
+                        <td>15,00 €</td>
+                        <td>4,99 €</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <!-- Llistes -->
+        <section class="lists-grid" style="margin-top: 60px;">
+            <div class="list-box">
+                <h2>Recomanacions</h2>
+                <ol>
+                    <li><strong>Blue Lock:</strong> Millor manga d'esports actual.</li>
+                    <li><strong>Chainsaw Man:</strong> Una bogeria visual.</li>
+                    <li><strong>Oshi no Ko:</strong> El costat fosc de l'espectacle.</li>
+                    <li><strong>Spy x Family:</strong> Comèdia i acció.</li>
+                </ol>
+            </div>
+            <div class="list-box" style="border-left-color: #4cc9f0;">
+                <h2>Properes Arribades</h2>
+                <ul>
+                    <li>Kaiju No. 8 - Vol. 10 (Maig)</li>
+                    <li>Frieren - Edició Especial (Juny)</li>
+                    <li>Jujutsu Kaisen - Guia Oficial (Juliol)</li>
+                </ul>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <a href="portal.html" class="logo" style="font-size: 1.5rem; margin-bottom: 20px; display: block;">MANGA<span>VERSE</span></a>
+                <p style="color: var(--text-secondary); font-size: 0.9rem; line-height: 1.8;">
+                    La teva porta d'entrada al millor manga i anime. Edicions exclusives directament de Tòquio.
+                </p>
+                <div class="social-links">
+                    <a href="#" class="social-icon" title="X">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
+                    </a>
+                    <a href="#" class="social-icon" title="Instagram">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line></svg>
+                    </a>
+                    <a href="#" class="social-icon" title="Facebook">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path></svg>
+                    </a>
+                    <a href="#" class="social-icon" title="YouTube">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M22.54 6.42a2.78 2.78 0 0 0-1.94-2C18.88 4 12 4 12 4s-6.88 0-8.6.42a2.78 2.78 0 0 0-1.94 2C1 8.14 1 12 1 12s0 3.86.42 5.58a2.78 2.78 0 0 0 1.94 2c1.71.42 8.6.42 8.6.42s6.88 0 8.6-.42a2.78 2.78 0 0 0 1.94-2C23 15.86 23 12 23 12s0-3.86-.42-5.58z"></path><polygon points="9.75 15.02 15.5 12 9.75 8.98 9.75 15.02"></polygon></svg>
+                    </a>
+                </div>
+            </div>
+            <div class="footer-section">
+                <h4>Navegació</h4>
+                <ul class="footer-links">
+                    <li><a href="portal.html">Inici</a></li>
+                    <li><a href="cataleg.html">Catàleg</a></li>
+                    <li><a href="contacte.html">Contacte</a></li>
+                    <li><a href="carret.html">El meu carret</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4>Suport</h4>
+                <ul class="footer-links">
+                    <li><a href="#">Preguntes freqüents</a></li>
+                    <li><a href="#">Privacitat</a></li>
+                    <li><a href="#">Termes d'ús</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4>Newsletter</h4>
+                <form class="newsletter-form" onsubmit="event.preventDefault(); alert('Gràcies!');">
+                    <input type="email" placeholder="Correu..." required>
+                    <button type="submit">OK</button>
+                </form>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 MangaVerse Store - Tots els drets reservats.</p>
+        </div>
+    </footer>
+
+    <script>
+        // --- MANGAVERSE PREMIUM CART SYSTEM PRO ---
+        
+        // 1. Storage Engine (window.name for ULTRA compatibility)
+        function getCart() {
+            try { return window.name ? JSON.parse(window.name) : []; }
+            catch (e) { window.name = "[]"; return []; }
+        }
+
+        function saveCart(cart) {
+            window.name = JSON.stringify(cart);
+            updateCartCounter();
+        }
+
+        function updateCartCounter() {
+            var cart = getCart();
+            var count = 0;
+            for(var i=0; i<cart.length; i++) count += (cart[i].quantity || 0);
+            document.querySelectorAll('.cart-count').forEach(function(c) {
+                c.textContent = count;
+                c.style.display = count > 0 ? 'flex' : 'none';
+            });
+        }
+
+        function showToast(name) {
+            var container = document.getElementById('toast-container');
+            if (!container) {
+                container = document.createElement('div');
+                container.id = 'toast-container';
+                document.body.appendChild(container);
+            }
+            var toast = document.createElement('div');
+            toast.className = 'toast';
+            toast.innerHTML = '<span>🛒</span> <span><b>' + name + '</b> afegit!</span>';
+            container.appendChild(toast);
+            setTimeout(function() {
+                toast.style.animation = 'fadeOut 0.5s ease forwards';
+                setTimeout(function() { toast.remove(); }, 500);
+            }, 3000);
+        }
+
+        // 2. UNIVERSAL CLICK LISTENER
+        document.addEventListener('click', function(e) {
+            // Find if clicked element is or is inside an add-to-cart button
+            var btn = e.target.closest('.btn-add-cart');
+            if (btn) {
+                e.preventDefault();
+                
+                // DATA EXTRACTION
+                var name = btn.getAttribute('data-name');
+                var price = parseFloat(btn.getAttribute('data-price')) || 0;
+                var img = btn.getAttribute('data-img') || '';
+                
+                var cart = getCart();
+                var found = false;
+                for(var i=0; i<cart.length; i++) {
+                    if(cart[i].name === name) {
+                        cart[i].quantity += 1;
+                        found = true;
+                        break;
+                    }
+                }
+                if(!found) cart.push({name: name, price: price, img: img, quantity: 1});
+                
+                saveCart(cart);
+                showToast(name);
+                
+                // Visual feedback
+                var oldText = btn.innerHTML;
+                btn.innerHTML = "✓ AFIEGIT";
+                btn.classList.add('btn-success');
+                setTimeout(function() {
+                    btn.innerHTML = oldText;
+                    btn.classList.remove('btn-success');
+                }, 1000);
+                
+                return;
+            }
+
+            // Find if clicked element is a filter button
+            var filterBtn = e.target.closest('[data-filter]');
+            if (filterBtn) {
+                var category = filterBtn.getAttribute('data-filter');
+                var cards = document.querySelectorAll('.product-card');
+                cards.forEach(function(card) {
+                    var cat = card.getAttribute('data-category');
+                    card.style.display = (category === 'all' || cat === category) ? 'flex' : 'none';
+                });
+                
+                document.querySelectorAll('[data-filter]').forEach(function(b) {
+                    b.style.background = 'var(--card-bg)';
+                });
+                filterBtn.style.background = 'var(--accent-primary)';
+                return;
+            }
+        });
+
+        // Initialize
+        window.onload = updateCartCounter;
+    </script>
+
+    <!-- Floating Cart Button -->
+    <a href="carret.html" class="floating-cart" title="Anar al Carret">
+        🛒 <span class="cart-count">0</span>
+    </a>
+
+</body>
+</html>
