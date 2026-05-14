@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>La Guía Definitiva de CSS</title>
+    <link rel="stylesheet" href="../css/guia-definitiva.css">
+</head>
+<body>
+
+    <header>
+        <h1>La Guía Definitiva de CSS 📘</h1>
+        <p>Un manual completo para entender cómo funciona CSS de principio a fin.</p>
+    </header>
+
+    <main>
+        <!-- SECCIÓN 1: SELECTORES -->
+        <section class="seccion-guia">
+            <h2>1. ¿Cómo seleccionamos elementos? (Los Selectores)</h2>
+            <p>Para darle estilo a algo en HTML, primero CSS necesita saber a quién. Así se hace:</p>
+            
+            <div class="ejemplo">
+                <p>Soy una etiqueta <code>&lt;p&gt;</code> normal. CSS me selecciona solo escribiendo <code>p { ... }</code></p>
+                <p class="mi-clase">Yo tengo una clase (<code>class="mi-clase"</code>). CSS me selecciona con un punto: <code>.mi-clase { ... }</code></p>
+                <p id="mi-id">Yo tengo un ID (<code>id="mi-id"</code>). CSS me selecciona con un numeral: <code>#mi-id { ... }</code></p>
+            </div>
+        </section>
+
+        <!-- SECCIÓN 2: MODELO DE CAJA -->
+        <section class="seccion-guia">
+            <h2>2. El Modelo de Caja (Box Model)</h2>
+            <p>Todo en la web es un cuadrado/rectángulo. Todo elemento tiene:</p>
+            <ul>
+                <li><strong>Content (Contenido):</strong> El texto o imagen real.</li>
+                <li><strong>Padding (Relleno):</strong> Espacio transparente DENTRO del borde.</li>
+                <li><strong>Border (Borde):</strong> La línea que rodea al relleno.</li>
+                <li><strong>Margin (Margen):</strong> Espacio transparente FUERA del borde (separa de otros elementos).</li>
+            </ul>
+            
+            <div class="caja-demostracion">
+                Soy una caja de demostración. Mira mi código CSS para entender el Padding, Borde y Margen.
+            </div>
+        </section>
+
+        <!-- SECCIÓN 3: TEXTOS Y TIPOGRAFÍA -->
+        <section class="seccion-guia">
+            <h2>3. Tipografía (Letras y Textos)</h2>
+            <div class="textos-ejemplo">
+                <p class="texto-1">Puedo cambiar la fuente, el tamaño y el peso (negrita).</p>
+                <p class="texto-2">Puedo alinear el texto, subrayarlo o separarlo.</p>
+            </div>
+        </section>
+
+        <!-- SECCIÓN 4: FONDOS Y COLORES -->
+        <section class="seccion-guia">
+            <h2>4. Fondos (Backgrounds) y Colores</h2>
+            <div class="fondos-ejemplo">
+                <div class="fondo-solido">Fondo de color sólido</div>
+                <div class="fondo-gradiente">Fondo con degradado</div>
+            </div>
+        </section>
+
+        <!-- SECCIÓN 5: DISPLAY Y ALINEACIÓN (FLEXBOX) -->
+        <section class="seccion-guia">
+            <h2>5. Cómo ordenar las cosas (Display: Flex)</h2>
+            <p>Por defecto, los bloques caen de arriba a abajo. Flexbox nos permite ponerlos de lado a lado.</p>
+            <div class="mi-contenedor-flex">
+                <div class="cajita">Caja 1</div>
+                <div class="cajita">Caja 2</div>
+                <div class="cajita">Caja 3</div>
+            </div>
+        </section>
+
+    </main>
+
+</body>
+</html>
+

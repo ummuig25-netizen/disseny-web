@@ -1,0 +1,147 @@
+/* =========================================================================
+   LA GUÍA DEFINITIVA DE CSS (Archivo Explicativo)
+   ========================================================================= */
+
+/* 
+   ESTILOS GENERALES 
+   Aquí seleccionamos la etiqueta <body> entera. Todo lo de adentro heredará la fuente.
+*/
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Tipo de letra */
+    line-height: 1.6;        /* Altura de las líneas (hace que sea más fácil leer) */
+    background-color: #fafafa; /* Color de fondo gris muy claro */
+    color: #222;             /* Color de texto (no se usa negro puro #000 para no cansar la vista) */
+    margin: 0;               /* Quitamos el margen feo que los navegadores ponen por defecto */
+    padding: 20px;           /* Separamos todo un poco de los bordes de la pantalla */
+}
+
+/* ==========================================
+   1. SELECTORES (Cómo apuntar al HTML)
+   ========================================== */
+
+/* 1.1 SELECTOR DE ETIQUETA: Afecta a TODOS los <h2> de la página */
+h2 {
+    color: #2c3e50;          /* Azul oscuro */
+    border-bottom: 2px solid #3498db; /* Una línea azul debajo del título */
+    padding-bottom: 5px;     /* Separación entre el texto del h2 y su línea de abajo */
+}
+
+/* 1.2 SELECTOR DE CLASE (.): Afecta solo a quien tenga class="mi-clase" */
+.mi-clase {
+    color: #e74c3c;          /* Rojo */
+    font-weight: bold;       /* Negrita */
+}
+
+/* 1.3 SELECTOR DE ID (#): Afecta SOLO al único elemento con id="mi-id" */
+#mi-id {
+    color: #27ae60;          /* Verde */
+    text-decoration: underline; /* Subrayado */
+}
+
+/* ==========================================
+   2. EL MODELO DE CAJA (Box Model)
+   ========================================== */
+.caja-demostracion {
+    /* CONTENIDO */
+    width: 300px;            /* Ancho (Width) */
+    height: 100px;           /* Alto (Height) */
+    background-color: #f39c12; /* Fondo naranja */
+    color: white;
+    
+    /* RELLENO (PADDING): Espacio HACIA ADENTRO */
+    /* Empuja el texto hacia el centro, haciendo la caja más gorda */
+    padding: 30px;           
+    
+    /* BORDE (BORDER): La línea que envuelve la caja */
+    /* Grosor (4px), Estilo (dashed/punteado), Color (negro) */
+    border: 4px dashed #000; 
+    
+    /* MARGEN (MARGIN): Espacio HACIA AFUERA */
+    /* Empuja a las otras cajas lejos de esta. */
+    /* El orden es: Arriba Derecha Abajo Izquierda (si pones 4 números) */
+    /* Si pones 1 número (ej. 20px), aplica a los 4 lados */
+    margin: 20px;            
+    
+    /* EXTRA */
+    border-radius: 10px;     /* Redondea las esquinas */
+    box-sizing: border-box;  /* SUPER TRUCO: Hace que el padding no cambie el 'width' de 300px que le dimos */
+}
+
+/* ==========================================
+   3. TIPOGRAFÍA (Textos)
+   ========================================== */
+.texto-1 {
+    font-size: 24px;         /* Tamaño de la letra */
+    font-style: italic;      /* Letra cursiva (inclinada) */
+    letter-spacing: 2px;     /* Espacio entre cada letra */
+}
+
+.texto-2 {
+    text-align: center;      /* Centra el texto (puede ser left, right, center, justify) */
+    text-transform: uppercase; /* CONVIERTE TODO A MAYÚSCULAS */
+    color: #8e44ad;          /* Morado */
+}
+
+/* ==========================================
+   4. FONDOS (Backgrounds)
+   ========================================== */
+.fondos-ejemplo div {
+    height: 100px;
+    margin-bottom: 10px;
+    color: white;
+    text-align: center;
+    line-height: 100px;      /* Truco: igualar line-height al height centra el texto verticalmente */
+}
+
+.fondo-solido {
+    background-color: #34495e; /* Un solo color aburrido */
+}
+
+.fondo-gradiente {
+    /* Degradado lineal: de izquierda a derecha, de azul a morado */
+    background: linear-gradient(to right, #3498db, #9b59b6);
+}
+
+/* ==========================================
+   5. FLEXBOX (Para maquetar la web)
+   ========================================== */
+.mi-contenedor-flex {
+    /* ¡Magia! Convierte la caja en un contenedor Flex */
+    display: flex;           
+    
+    /* DIRECCIÓN: row (fila/horizontal) o column (columna/vertical) */
+    flex-direction: row;     
+    
+    /* JUSTIFICAR EJE HORIZONTAL */
+    /* flex-start (izquierda), center (centro), flex-end (derecha), 
+       space-between (separados a los extremos), space-around (espacio igual alrededor) */
+    justify-content: space-around; 
+    
+    /* ALINEAR EJE VERTICAL */
+    align-items: center;     
+    
+    background-color: #ecf0f1;
+    padding: 20px;
+}
+
+.cajita {
+    background-color: #16a085;
+    color: white;
+    padding: 20px 40px;      /* 20px arriba/abajo, 40px izquierda/derecha */
+    border-radius: 8px;
+    font-weight: bold;
+}
+
+/* ==========================================
+   6. EXTRAS: HOVER Y TRANSICIONES
+   ========================================== */
+.cajita:hover {
+    background-color: #1abc9c;   /* Cambia color al pasar ratón */
+    transform: translateY(-10px);/* Se eleva 10 píxeles */
+    cursor: pointer;             /* Manita del ratón */
+}
+
+.cajita {
+    /* Hace que todos los cambios que sufra (como el hover) tarden 0.3 segundos en vez de ser instantáneos */
+    transition: all 0.3s ease; 
+}

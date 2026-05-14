@@ -1,0 +1,68 @@
+/* ==========================================
+   NIVEL INTERMEDIO - intermedio.css
+   ========================================== */
+
+body {
+    font-family: Arial, sans-serif;
+    padding: 20px;
+}
+
+/* 1. FLEXBOX (La mejor herramienta para alinear) */
+.contenedor-flex {
+    display: flex;                  /* Activamos el superpoder de Flexbox */
+    justify-content: space-between; /* Separa las cajas equitativamente */
+    align-items: center;            /* Centra las cajas verticalmente */
+    background-color: #eee;
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 40px;
+}
+
+.caja-flex {
+    background-color: #9b59b6;      /* Morado */
+    color: white;
+    padding: 20px;
+    border-radius: 8px;
+    flex: 1;                        /* Todas las cajas ocupan el mismo ancho */
+    margin: 0 10px;                 /* Margen izquierdo y derecho */
+    text-align: center;
+}
+
+/* 2. HOVER (Cuando el ratón pasa por encima) */
+.boton-interactivo {
+    background-color: #e67e22;      /* Naranja */
+    color: white;
+    padding: 15px 30px;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.3s;               /* Hace que el cambio sea suave, dura 0.3 segundos */
+    margin-bottom: 40px;
+}
+
+/* Pseudo-clase :hover */
+.boton-interactivo:hover {
+    background-color: #d35400;      /* Naranja más oscuro */
+    transform: translateY(-5px);    /* ¡Hace que el botón "salte" hacia arriba 5 píxeles! */
+    box-shadow: 0 10px 15px rgba(0,0,0,0.2); /* Aparece una sombra debajo */
+}
+
+/* 3. POSICIONAMIENTO */
+.caja-padre {
+    background-color: #bdc3c7;
+    height: 200px;
+    padding: 20px;
+    position: relative;             /* IMPORTANTE: Actúa como marco de referencia para la hija */
+    border-radius: 10px;
+}
+
+.caja-hija {
+    background-color: #c0392b;      /* Rojo */
+    color: white;
+    padding: 15px;
+    border-radius: 5px;
+    position: absolute;             /* Se posiciona libremente DENTRO de la caja padre */
+    bottom: 20px;                   /* Se pega a 20px de la parte inferior del padre */
+    right: 20px;                    /* Se pega a 20px de la parte derecha del padre */
+}

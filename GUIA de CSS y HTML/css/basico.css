@@ -1,0 +1,48 @@
+/* ==========================================
+   NIVEL BÁSICO - basico.css
+   ========================================== */
+
+/* 1. Selector de Etiqueta (afecta a TODO el body) */
+body {
+    font-family: Arial, sans-serif; /* Tipo de letra */
+    background-color: #f0f8ff;      /* Color de fondo azul muy clarito (AliceBlue) */
+    color: #333333;                 /* Color del texto */
+    padding: 20px;
+}
+
+/* 2. Selector de Clase (empieza con un punto . ) */
+.texto-destacado {
+    font-size: 18px;                /* Tamaño de letra */
+    font-style: italic;             /* Letra cursiva */
+    color: #555555;
+}
+
+/* 3. El Modelo de Caja (Box Model) */
+.caja-1 {
+    background-color: #ffffff;      /* Fondo blanco */
+    padding: 20px;                  /* Relleno: Espacio HACIA ADENTRO */
+    margin-bottom: 30px;            /* Margen: Espacio HACIA AFUERA (abajo) */
+    border: 2px solid #3498db;      /* Borde: Grosor, estilo (sólido) y color (azul) */
+}
+
+/* 4. Selector de ID (empieza con un hashtag # ) 
+   Los ID son únicos, solo debería haber uno por página HTML */
+#caja-especial {
+    background-color: #ffeaa7;      /* Fondo amarillo pastel */
+    padding: 30px;
+    margin-bottom: 30px;
+    border: 4px dashed #d63031;     /* Borde punteado rojo */
+    border-radius: 15px;            /* ¡Esquinas redondeadas! */
+}
+
+/* 5. Estilizando un botón */
+.mi-boton {
+    background-color: #2ecc71;      /* Fondo verde */
+    color: white;                   /* Texto blanco */
+    padding: 15px 25px;
+    border: none;                   /* Quitamos el borde por defecto */
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: bold;              /* Texto en negrita */
+    cursor: pointer;                /* Cambia el cursor a una manita */
+}

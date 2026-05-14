@@ -1,0 +1,27 @@
+/* ¡Bienvenido a tu hoja de estilos CSS! 
+   Aquí es donde daremos diseño y color a tu archivo index.html.
+   A lo largo del tutorial, te pediré que añadas código aquí. */
+
+/* ==========================================
+   1. NIVEL BÁSICO
+   ========================================== */
+
+/* Puedes empezar dándole un estilo general a toda la página (el body) */
+body {
+    font-family: Arial, sans-serif; /* Cambia el tipo de letra */
+    background-color: #f4f4f9;      /* Un color de fondo suave */
+    color: #333;                    /* Color de texto gris oscuro */
+    margin: 0;                      /* Quitamos el margen por defecto del navegador */
+    padding: 20px;
+}
+
+/* ==========================================
+   2. NIVEL INTERMEDIO
+   ========================================== */
+/* Aquí practicaremos con clases como .contenedor-flex más adelante */
+
+
+/* ==========================================
+   3. NIVEL AVANZADO
+   ========================================== */
+/* Aquí añadiremos animaciones y diseño adaptable (responsive) */

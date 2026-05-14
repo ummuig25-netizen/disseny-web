@@ -1,0 +1,86 @@
+/* ==========================================
+   NIVEL AVANZADO - avanzado.css
+   ========================================== */
+
+/* Variables CSS (Una forma avanzada de guardar colores para reutilizarlos) */
+:root {
+    --color-principal: #34495e;
+    --color-secundario: #1abc9c;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    padding: 20px;
+}
+
+/* 1. CSS GRID (Ideal para estructuras de páginas complejas) */
+.contenedor-grid {
+    display: grid;
+    /* Creamos 3 columnas del mismo tamaño (1fr = 1 fracción del espacio) */
+    grid-template-columns: 1fr 1fr 1fr; 
+    gap: 15px; /* Espacio entre filas y columnas */
+    margin-bottom: 50px;
+}
+
+.item-grid {
+    background-color: var(--color-principal); /* Usamos la variable */
+    color: white;
+    padding: 30px;
+    text-align: center;
+    border-radius: 5px;
+    font-size: 24px;
+}
+
+/* Este item ocupará 2 columnas de ancho */
+.col-ancha {
+    grid-column: span 2; 
+    background-color: var(--color-secundario);
+}
+
+/* 2. ANIMACIONES (@keyframes) */
+@keyframes rotar-y-cambiar {
+    0% { transform: rotate(0deg); background-color: #f1c40f; }
+    50% { transform: rotate(180deg); background-color: #e67e22; border-radius: 50%; } /* A la mitad se hace un círculo */
+    100% { transform: rotate(360deg); background-color: #f1c40f; }
+}
+
+.caja-animada {
+    width: 200px;
+    height: 200px;
+    background-color: #f1c40f;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-bottom: 50px;
+    /* Aplicamos la animación: nombre, duración, curva de velocidad, y repetición */
+    animation: rotar-y-cambiar 4s ease-in-out infinite; 
+}
+
+/* 3. RESPONSIVE DESIGN (@media queries) */
+.caja-responsive {
+    background-color: #2c3e50;
+    color: white;
+    padding: 40px;
+    text-align: center;
+    border-radius: 10px;
+}
+
+/* MODO MÓVIL: Si la pantalla tiene un ancho máximo de 600px, aplica estos estilos */
+@media (max-width: 600px) {
+    .caja-responsive {
+        background-color: #e74c3c; /* Cambia a rojo en móviles */
+    }
+    .caja-responsive p::after {
+        content: " ¡ESTÁS EN MODO MÓVIL!";
+        font-weight: bold;
+    }
+
+    /* También hacemos que el Grid pase de 3 columnas a 1 sola columna en móviles */
+    .contenedor-grid {
+        grid-template-columns: 1fr;
+    }
+    .col-ancha {
+        grid-column: span 1; /* Le quitamos lo ancho */
+    }
+}
